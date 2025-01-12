@@ -1,9 +1,13 @@
-<meta charset="UTF-8">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
+  /*
   *{
     border: 1px red dashed;
   }
+  */
 
   html{
     min-height: 100%;
@@ -14,24 +18,58 @@
     padding-bottom: 40px;
     background: linear-gradient(15deg, #142850, #14365f, #13476f, #125d80, #107792, #0d96a5, #09b8b4, #04ccb1);
     color: rgba(255, 255, 255, 1.0);
+    font-family: 'Times New Roman', Times, serif;
   }
 
   a {
     color: rgba(255, 255, 255, 1.0);
+    text-decoration: none;
   }
 
-    .item {
+  .item {
     background-color: rgba(149, 123, 173, 0.5);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 1000px;
+    padding: 5px;
+    padding-right: 53px;
+    box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
   }
 
   .main-container{
-    width: 640px;
+    max-width: 640px;
+    margin: auto;
   }
+
+  .image-row{
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .name-row{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  .social-icons-row{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .avatar-img{
     width: 128px;
     height: 128px;
     object-fit: cover;
     border-radius: 128px;
+  }
+
+  .link-text{
+    text-align: center;
+    flex-grow: 1;
   }
 
   .thumbnail{
@@ -48,9 +86,14 @@
     border-radius: 48px;
   }
 
+  .social-icons-row i{
+  margin-right: 8px;
+  font-size: 27px;
+  }
+
 
 </style>
-
+</head>
 
 <body>
   <div class = "main-container">
@@ -63,18 +106,24 @@
       Hans Amemiya
     </div>
 
-    <div class = "social-icons-row">
-      <a href = "https://github.com/Hansamemiya/" target="_blank"> GitHub</a>
-      <a href = "https://www.linkedin.com/in/hans-amemiya-56747a1b1/" target="_blank"> LinkedIn</a>
-      <a href = "https://www.instagram.com/hans_amemiya" target="_blank/"> Instagram</a>
+    <div class="social-icons-row">
+      <a href="https://github.com/Hansamemiya/" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/hans-amemiya-56747a1b1/" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://www.instagram.com/hans_amemiya" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
     </div>
-
+    
     <div class = "links-row">
 
       <div class="item">
         <img class = "item-img" src="dmitrii-shirnin-QCcuPwG63sE-unsplash.jpg">
 
-        <a target="_blank" href="http://paulgraham.com/startupideas.html">
+        <a class = "link-text" target="_blank" href="http://paulgraham.com/startupideas.html">
           How to Get Startup Ideas
         </a>
       </div>
@@ -82,7 +131,7 @@
       <div class="item">
         <img class = "item-img" src="mos-design-1kFeoOZmj9E-unsplash.jpg">
 
-        <a target="_blank" href="http://paulgraham.com/startupideas.html">
+        <a class = "link-text" target="_blank" href="http://paulgraham.com/startupideas.html">
           How to Get Startup Ideas
         </a>
       </div>
